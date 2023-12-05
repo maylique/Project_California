@@ -1,18 +1,197 @@
-/* Error: There is no module with the namespace "mixins".
- *    ,
- * 57 | /         @include mixins.button
- * 58 | |     }
- *    | '----^
- *    '
- *   assets/scss/main.scss 57:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: There is no module with the namespace "mixins".\a    \2577 \a 57 \2502  \250c          @include mixins.button\a 58 \2502  \2502      }\a    \2502  \2514 \2500 \2500 \2500 \2500 ^\a    \2575 \a   assets/scss/main.scss 57:9  root stylesheet';
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
+@font-face {
+  font-family: "WorkSans";
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+html {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  color: white;
+}
+header .vLine {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+header .vLine span {
+  width: 1px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.386);
+}
+header .hero {
+  width: 30%;
+  margin: 1rem 0 15rem;
+}
+header h4 {
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+header h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  line-height: 0.8;
+  margin: 4% 0;
+}
+header h1 strong {
+  color: black;
+  text-shadow: 0 0 1px white;
+}
+header .heroEnd {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 8%;
+}
+
+.lastYear {
+  color: white;
+  margin: 4% 0 8% 4%;
+  background: url("../img/map.svg") no-repeat bottom right;
+  background-size: 30%;
+}
+.lastYear p {
+  font-size: 4rem;
+  font-weight: bold;
+  max-width: 70%;
+  margin-bottom: 4%;
+}
+.lastYear h4 {
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+.lastYear h2 {
+  font-size: 3rem;
+  margin: 0 0 2%;
+}
+
+.stuck {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 150vh;
+  position: relative;
+}
+.stuck div {
+  max-width: 30%;
+}
+.stuck div h2 {
+  font-size: 3.6rem;
+}
+.stuck p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+.stuck img {
+  max-height: 150px;
+  position: absolute;
+}
+
+.stuck img:nth-of-type(1) {
+  top: -5%;
+  right: 5%;
+}
+
+.stuck img:nth-of-type(2) {
+  top: 10%;
+  left: 5%;
+}
+
+.stuck img:nth-of-type(3) {
+  top: 35%;
+  right: 0%;
+}
+
+.stuck img:nth-of-type(4) {
+  top: 50%;
+  left: 20%;
+}
+
+.stuck img:nth-of-type(5) {
+  top: 60%;
+  right: 30%;
+}
+
+.stuck img:nth-of-type(6) {
+  top: 75%;
+  left: 0%;
+}
+
+.stuck img:nth-of-type(7) {
+  bottom: 0%;
+  right: 30%;
+}
+
+.goldenBear {
+  color: white;
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5rem;
+  position: relative;
+}
+.goldenBear div {
+  max-width: 40%;
+}
+.goldenBear div h2 {
+  font-size: 3rem;
+  line-height: 1;
+}
+.goldenBear p {
+  font-weight: bold;
+  line-height: 1.5;
+}
+.goldenBear h3 {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  margin-top: 1rem;
+}
+.goldenBear .goldSmall {
+  max-width: 25%;
+}
+.goldenBear img {
+  position: absolute;
+}
+
+.goldenBear img:nth-of-type(1) {
+  max-height: 70%;
+  bottom: -10%;
+  left: 5%;
+}
+
+.goldenBear img:nth-of-type(2) {
+  max-height: 40%;
+  bottom: -5%;
+  right: 20%;
+}
+
+.circle {
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.circle img {
+  max-width: 30%;
+  margin-bottom: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

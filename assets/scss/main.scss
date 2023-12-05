@@ -1,4 +1,4 @@
-@use 'mixins' as mixin;
+// @use 'mixins' as mixin;
 @import 'fonts';
 
 * {
@@ -53,9 +53,9 @@ header {
         text-shadow: 0 0 1px white;
     }
 
-    a {
-        @include mixins.button
-    }
+    // a {
+    //     @include mixins.button
+    // }
 
     .heroEnd {
         display: flex;
