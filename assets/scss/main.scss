@@ -1,14 +1,5 @@
-@use 'button' as button;
-
-@font-face {
-    font-family: 'Inter';
-    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
-}
-
-@font-face {
-    font-family: 'WorkSans';
-    src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
-}
+@use 'mixins' as mixin;
+@import 'fonts';
 
 * {
     padding: 0;
@@ -63,7 +54,7 @@ header {
     }
 
     a {
-        @include button.button
+        @include mixins.button
     }
 
     .heroEnd {
@@ -155,3 +146,60 @@ header {
     right: 30%;
 }
 
+.goldenBear {
+    color: white;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem;
+    position: relative;
+
+    div {
+        max-width: 40%;
+        h2 {
+            font-size: 3rem;
+            line-height: 1;
+        }
+    }
+
+    p {
+        font-weight: bold;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 0.8rem;
+        font-weight: lighter;
+        margin-top: 1rem;
+    }
+
+    .goldSmall {
+        max-width: 25%;
+    }
+
+    img {
+        position: absolute;
+    }
+}
+
+.goldenBear img:nth-of-type(1) {
+    max-height: 70%;
+    bottom: -10%;
+    left: 5%;
+}
+
+.goldenBear img:nth-of-type(2) {
+    max-height: 40%;
+    bottom: -5%;
+    right: 20%;
+}
+
+.circle {
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    img {
+        max-width: 30%;
+        margin-bottom: 3rem;
+}
+}

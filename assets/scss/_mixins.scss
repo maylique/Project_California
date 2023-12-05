@@ -1,0 +1,15 @@
+@mixin button {
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 0.4rem 1rem;
+}
+
+@mixin aniCircle {
+    animation: circle  10s infinite ease-in-out;
+    @keyframes circle {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
